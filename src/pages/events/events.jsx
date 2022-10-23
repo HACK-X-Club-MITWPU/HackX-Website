@@ -7,7 +7,7 @@ import eventimage1 from "../../assets/img/event-image1.png"
 import eventimage2 from "../../assets/img/event-image2.png"
 import logo from "../../assets/img/logo.png"
 import './events.css'
-import Navbar from "../../components/Navbar/Navbar"
+import Navbar from "../../Components/Navbar/Navbar"
 
 
 

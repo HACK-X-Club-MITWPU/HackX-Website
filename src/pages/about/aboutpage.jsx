@@ -1,4 +1,4 @@
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import BackgroundImage from "../../assets/img/red-lines-bg.png"
 import Tile from "./Tile";
 
