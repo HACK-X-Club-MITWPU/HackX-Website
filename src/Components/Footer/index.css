@@ -15,3 +15,17 @@ footer.footer > p {
   text-align: center;
   color: #fff;
 }
+
+.col {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.social-button {
+  border-radius: 50%;
+
+}
+
+
