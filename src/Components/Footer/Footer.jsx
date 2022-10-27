@@ -16,12 +16,12 @@ const Footer = () => {
           <Column>
             <HorizontalRule />
             <Heading>Useful Links</Heading>
-
             <FooterLink href="/home">Home</FooterLink>
             <FooterLink href="/events">Events</FooterLink>
             <FooterLink href="/about">About Us</FooterLink>
             <FooterLink href="/achivements">Achievements</FooterLink>
           </Column>
+
           <Column>
             <SocialButton
               URL="https://www.facebook.com/ianupamshekhar"
@@ -40,9 +40,13 @@ const Footer = () => {
             />
             <p>MITWPU, Pune</p>
           </Column>
+
           <Column>
             <HorizontalRule />
-            <img src="https://assets.leetcode.com/users/avatars/avatar_1655745431.png" alt="Logo" />
+            <img
+              src="https://assets.leetcode.com/users/avatars/avatar_1655745431.png"
+              alt="Logo"
+            />
           </Column>
         </Row>
       </Container>

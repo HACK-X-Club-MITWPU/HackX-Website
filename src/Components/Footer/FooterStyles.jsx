@@ -4,7 +4,7 @@ export const Box = styled.div`
   padding: 80px 60px;
   background: black;
   position: absolute;
-  bottom: 0;
+  height: 100%;
   width: 100%;
 
   @media (max-width: 1000px) {
@@ -31,7 +31,7 @@ export const Column = styled.div`
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 60px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -43,6 +43,7 @@ export const FooterLink = styled.a`
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
+  font-family: "Inter"
 
   &:hover {
     color: red;
