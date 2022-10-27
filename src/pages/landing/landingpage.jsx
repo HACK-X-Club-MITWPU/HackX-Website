@@ -10,7 +10,7 @@ function Landing() {
     <>
         
         <TitleBox>
-            Hack X
+            HACK-X
             <Subtitle>Our Concern is Security</Subtitle>
         </TitleBox>
         <Canvas camera={{ zoom:3 }} style={{ zIndex: 0, height: '100vh' }}>

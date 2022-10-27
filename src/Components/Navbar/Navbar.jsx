@@ -13,7 +13,7 @@ export default function Navbar(){
                     <li>|</li>
                     <li>Team</li>
                     <li>Events</li>
-                    <li>Achievments</li>
+                    <li>Achievements</li>
                     <li>About us</li>
                 </ul>
             </div>
