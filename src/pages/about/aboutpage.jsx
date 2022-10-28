@@ -26,9 +26,10 @@ const About = () => (
       <Tile title="NON-TECH TEAM" />
       <Tile white title="OUR LEGACY" />
     </section>
-
     <Footer />
   </main>
+
+
 )
 
 export default About;
