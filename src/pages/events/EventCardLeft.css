@@ -16,6 +16,7 @@
 }
 
 .left-card-left-side h1{
+    font-size: 4vh;
     padding-left: 2vw;
     margin-top: 5vh;
 }
@@ -41,5 +42,6 @@
 }
 
 .left-card-right-side h1{
+    font-size: 5vh;
     margin-left: 5vw;
 }

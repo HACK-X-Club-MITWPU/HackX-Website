@@ -3,7 +3,7 @@
 
 
 .event-card-right{
-
+    border: 5px solid #1e1e1e;
     display: flex;
     width: 82vw;
     height: 60vh;
@@ -16,18 +16,24 @@
     width: 30vw;
     height: 45vh;
     margin-top: 3vh;
-    margin-right: 8vw;
+    margin-right: 40vw; 
 }
+.right-card-right-side h1{
+    font-size: 4vh;
+}
+
+
 
 .right-card-left-side p{
     font-size: 2vh;
-    margin-top: 5vh;
+    margin-top: 5vh;    
     margin-left: 5vw;
     margin-right: 8vw;
 }
 
 .right-card-left-side h1{
 
+    font-size: 5vh;
     margin-top: 3vw;
     margin-left: 5vw;
 }
@@ -35,5 +41,5 @@
 .card-line-right{
     border-right: 6px solid white;
     height: 59vh;
-    margin-right: 1.675vw;
+    margin-right: 8.2vh;
 }
