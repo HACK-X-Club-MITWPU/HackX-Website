@@ -4,11 +4,9 @@ import Tile from "./Tile";
 
 const About = () => (
   <main id="about" className="bg-hackx-grey">
-    <section className="h-screen relative">
-      <img src={BackgroundImage} className="w-full h-full object-cover mix-blend-hard-light" alt="Background" />
-
-      <div className="w-full px-4 sm:px-16 absolute bottom-0 bg-hackx-grey">
-        <div className="my-7 flex flex-col sm:flex-row w-[270px] sm:w-full mx-auto justify-between items-center gap-8">
+    <section className="relative">
+      <div className="w-full px-4 sm:px-16">
+        <div className="py-12 flex flex-col sm:flex-row w-[270px] sm:w-full mx-auto justify-between items-center gap-8">
           <h1 className="font-title text-7xl sm:text-8xl">
             We are<br />HACK-X
           </h1>
@@ -26,6 +24,7 @@ const About = () => (
       <Tile title="NON-TECH TEAM" />
       <Tile white title="OUR LEGACY" />
     </section>
+
     <Footer />
   </main>
 

@@ -1,8 +1,7 @@
 import { Route,Routes,BrowserRouter } from "react-router-dom";
-import About from "./pages/about/aboutpage";
-import Events from "./pages/events/eventspage";
-import Landing from "./pages/landing/landingpage";
-import OurTeam from "./pages/team/ourteampage";
+import Events from "./pages/events";
+import Landing from "./pages/landing";
+import OurTeam from "./pages/team";
 import './App.css';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Landing/>} />
-        <Route exact path="/about" element={<About/>} />
         <Route exact path="/events" element={<Events/>} />
         <Route exact path="/team" element={<OurTeam/>} />
         

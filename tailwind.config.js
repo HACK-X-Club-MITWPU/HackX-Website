@@ -11,7 +11,8 @@ module.exports = {
         "accent": "#990000"
       },
       fontFamily: {
-        "title": "BankGothic"
+        "title": "BankGothic",
+        "regular": "Poppins"
       },
     },
   },
