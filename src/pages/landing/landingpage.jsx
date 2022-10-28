@@ -3,12 +3,13 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useCursor } from '@react-three/drei' ;
 import { AsciiEffect } from 'three-stdlib';
 import styled from 'styled-components';
-import Footer from "../../Components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Landing() {
   return (
     <>
-        
+        <Navbar/>
         <TitleBox>
             HACK-X
             <Subtitle>Our Concern is Security</Subtitle>

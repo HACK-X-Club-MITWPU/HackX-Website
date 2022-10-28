@@ -6,6 +6,7 @@
     margin-left: 8vw;
     margin-right: 8vw;
     color: white;
+    transition: all 700ms ease;
 }
 
 .left-card-left-side img{

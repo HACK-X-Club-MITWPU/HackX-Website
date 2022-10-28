@@ -8,7 +8,11 @@ export default function EventCardRight(props){
             <div className="right-card-left-side">
             <h1>{props.title}</h1>
             <p>{props.content}</p>
-            <KeyboardArrowDownIcon htmlColor="yellow" fontSize="large" className={props.className} sx={{marginLeft: `5vw`}} ></KeyboardArrowDownIcon>
+            <KeyboardArrowDownIcon htmlColor="yellow" fontSize="large" className={props.className} sx={{marginLeft: `5vw`}} 
+            onClick={()=>{
+                window.scrollBy({left:0,top:window.innerHeight,behavior: 'smooth'});
+            }}
+            ></KeyboardArrowDownIcon>
             </div>
             <div className="card-line-right">
             </div>
