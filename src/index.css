@@ -3,7 +3,7 @@
 @layer base {
     html {
         @apply text-white;
-        @apply font-[Poppins];
+        @apply font-regular;
     }
 }
 

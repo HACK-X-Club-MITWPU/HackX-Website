@@ -1,4 +1,4 @@
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../Components/Footer";
 import React from 'react';
 import {useRef, useEffect} from 'react';
 import { useLocation } from "react-router-dom";
