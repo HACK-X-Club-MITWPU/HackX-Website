@@ -7,9 +7,11 @@ import styled from 'styled-components';
 function Hero() {
     return (
         <>
-            <TitleBox>
-                Hack X
-                <Subtitle>Our Concern is Security</Subtitle>
+            <TitleBox className="font-title text-7xl sm:text-8xl">
+                <span>We are<br />HACK-X</span>
+                <h2 className="my-auto text-lg font-regular flex">
+                    <div style={{ width: 0, flexGrow: 1, padding: "10px 0 0 12px" }}>A cybersecurity club run and managed by students based in MITWPU, Pune.</div>
+                </h2>
             </TitleBox>
             <Canvas camera={{ zoom: 3 }} style={{ zIndex: 0, height: '100vh' }}>
                 <color attach="background" args={['black']} />
@@ -84,22 +86,16 @@ export default Hero;
 
 
 const TitleBox = styled.div`
-  font-family: 'Mokoto', sans-serif;
-  color: #c80a5a;
   position: absolute;
   margin: 0;
   padding: 0;
   z-index: 9999999;
-  bottom: 200px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 100px;
-  font-size: 7em;
-`;
+  display: inline-block;
 
-const Subtitle = styled.h2`
-  font-family: 'Mokoto', sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-  z-index: 9999999;
-  font-size: 0.3em;
+  @media (max-width: 639px) {
+    left: 40px;
+  }
 `;
