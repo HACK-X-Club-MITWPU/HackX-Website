@@ -1,40 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Poppins&display=swap');
-@import url('http://fonts.cdnfonts.com/css/bankgothic-lt-bt');
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Poppins&display=swap");
+@import url("http://fonts.cdnfonts.com/css/bankgothic-lt-bt");
 
-.navbar{
-    display: grid;
-    width: 100vw;
-    height: 75px;
-    overflow: hidden;
-    background-color: #1E1E1E;
-}
-
-.navbar h3{
-    color: white;
-    font-family: 'BankGothic Lt BT', sans-serif;
-    position: absolute;
-    width: 97px;
-    height: 14.06px;
-    font-size: 20px;
-    left: 100px;
-    top: 2.5vh;
-}
-
-.nav-menu{
-    grid-column: 3/4;
-}
-
-.nav-menu ul{
-    list-style-type: none;
-  height: 70px;
+.navbar {
+  container-type: inline-size;
+  container-name: navbar;
   display: flex;
-  align-items:center;
-  float: right;
-
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: #1e1e1e;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 0.1em 9em 0em #000;
 }
 
-li {
-    color: white;
-    display: block;
-    padding: 17px;
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo__img {
+  height: 4.5em;
+}
+
+.navbar__logo__h3 {
+  color: white;
+  font-family: "BankGothic Lt BT", sans-serif;
+  font-size: 1.5em;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  padding: 0.9em;
+  color: white;
+}
+
+.nav-links:first-child {
+  color: #c80a5a;
+  user-select: none;
+}
+
+.nav-links:hover:not(:first-child) {
+  color: #c80a5a;
+}
+
+@container navbar (max-width: 721px) {
+  .toggle-button {
+    display: flex;
   }
+  .toggle-button>button>svg {
+    font-size: 2em;
+  }
+  .nav-menu > .nav-links:first-child, .nav-menu > :nth-child(2) {
+    display: none;
+  }
+  .nav-menu.hide {
+    display: none;
+  }
+  .nav-menu {
+    flex-direction:column;
+    position: absolute;
+    background: #1e1e1e;
+    width:100%;
+    top:4.5em;
+    left:0;
+    border-top: 1px solid #333;
+  }
+}
+
+@container navbar (max-width: 421px) {
+  .navbar__logo__img {
+    height: 2.5em;
+  }
+  .nav-menu {
+    top: 3.5em;
+  }
+}

@@ -30,3 +30,7 @@ body {
 body {
     background: #f0f0f0;
 }
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
